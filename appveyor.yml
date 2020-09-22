@@ -28,7 +28,7 @@ test:
     - '**\*.Tests.dll'
     
 artifacts:
-  - path: '**\DotNetSiemensPLCToolBoxLibrary*.nupkg' 
+  - path: '**\DotNetProjects*.nupkg' 
     
 deploy:
   provider: NuGet
