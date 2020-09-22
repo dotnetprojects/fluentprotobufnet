@@ -69,7 +69,7 @@ namespace FluentProtobufNet
 
         public virtual void Configure(Configuration cfg)
         {
-            _protobufModel = TypeModel.Create();
+            _protobufModel = RuntimeTypeModel.Create();
             foreach (var classMap in ClassProviders)
                 classMap.GetRuntimeTypeModel(_protobufModel);
 

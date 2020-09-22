@@ -77,7 +77,7 @@ namespace FluentProtobufNet.Mapping
             foreach (var f in Fields)
             {
                 protoType.Add(f.FieldNumber, f.Member.Name);
-                protoType.GetFields().Single(newField => newField.FieldNumber == f.FieldNumber).AsReference = f.AsReference;
+                //protoType.GetFields().Single(newField => newField.FieldNumber == f.FieldNumber).AsReference = f.AsReference;
             }
 
             return protobufModel;
